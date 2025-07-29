@@ -1,0 +1,561 @@
+/* Custom CSS for Mental Health Awareness Website */
+
+/* CSS Variables */
+:root {
+    --primary-color: #6c63ff;
+    --secondary-color: #4CAF50;
+    --accent-color: #FFB74D;
+    --calm-blue: #E3F2FD;
+    --soft-green: #E8F5E8;
+    --gentle-purple: #F3E5F5;
+    --warm-peach: #FFF3E0;
+    --text-dark: #2C3E50;
+    --text-light: #6C757D;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+
+/* Navigation */
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: var(--text-dark) !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Hero section */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #667eea 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decorative background pattern for hero section */
+.hero-section::before {
+    content: '';                   /* Creates an empty element */
+    position: absolute;            /* Positions it over the background */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Creates a subtle white triangle pattern */
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="rgba(255,255,255,0.1)" points="0,1000 1000,800 1000,1000"/></svg>');
+    background-size: cover;        /* Makes pattern cover entire area */
+    pointer-events: none;          /* Allows clicking through the pattern */
+}
+
+/* Container for hero content to appear above background pattern */
+.hero-content {
+    position: relative;            /* Positions above the background pattern */
+    z-index: 2;                   /* Makes sure it appears on top */
+}
+
+/* Main heading in hero section */
+.hero-section h1 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);  /* Adds shadow for readability */
+    animation: fadeInUp 1s ease-out;            /* Slides up when page loads */
+}
+
+/* Paragraph text in hero section */
+.hero-section p {
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);  /* Lighter shadow than heading */
+    animation: fadeInUp 1s ease-out 0.3s both; /* Slides up after heading */
+}
+
+/* Container for hero buttons */
+.hero-buttons {
+    animation: fadeInUp 1s ease-out 0.6s both; /* Slides up last */
+}
+
+/* Styling for buttons in hero section */
+.hero-buttons .btn {
+    border-radius: 50px;          /* Makes buttons very rounded */
+    padding: 12px 30px;           /* Space inside buttons */
+    font-weight: 600;             /* Makes text bold */
+    text-transform: uppercase;     /* Makes text ALL CAPS */
+    letter-spacing: 1px;          /* Adds space between letters */
+    transition: all 0.3s ease;    /* Smooth animation for hover effects */
+}
+
+/* What happens when you hover over hero buttons */
+.hero-buttons .btn:hover {
+    transform: translateY(-2px);  /* Moves button up slightly */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);  /* Adds shadow underneath */
+}
+
+/* Cards for tips */
+.tip-card {
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    background: white;
+}
+
+.tip-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+
+.tip-icon {
+    transition: transform 0.3s ease;
+}
+
+.tip-card:hover .tip-icon {
+    transform: scale(1.1);
+}
+
+/* Alternate card backgrounds */
+.tip-card:nth-child(3n+1) {
+    background: linear-gradient(135deg, var(--calm-blue) 0%, white 100%);
+}
+
+.tip-card:nth-child(3n+2) {
+    background: linear-gradient(135deg, var(--soft-green) 0%, white 100%);
+}
+
+.tip-card:nth-child(3n+3) {
+    background: linear-gradient(135deg, var(--gentle-purple) 0%, white 100%);
+}
+
+/* Resource cards */
+.resource-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* Purple theme for youth cards */
+.btn-purple {
+    background-color: #9c27b0;
+    border-color: #9c27b0;
+    color: white;
+}
+
+.btn-purple:hover {
+    background-color: #7b1fa2;
+    border-color: #7b1fa2;
+}
+
+.btn-outline-purple {
+    color: #9c27b0;
+    border-color: #9c27b0;
+}
+
+.btn-outline-purple:hover {
+    background-color: #9c27b0;
+    border-color: #9c27b0;
+    color: white;
+}
+
+.text-purple {
+    color: #9c27b0 !important;
+}
+
+/* Buttons inside resource cards */
+.resource-card .btn {
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.resource-card .btn:hover {
+    transform: scale(1.05);
+}
+
+/* Custom purple buttons */
+.btn-purple {
+    background-color: #9C27B0;
+    border-color: #9C27B0;
+    color: white;
+}
+
+.btn-purple:hover {
+    background-color: #7B1FA2;
+    border-color: #7B1FA2;
+    color: white;
+}
+
+/* Outline version of purple button (transparent background) */
+.btn-outline-purple {
+    color: #9C27B0;                /* Purple text */
+    border-color: #9C27B0;         /* Purple border */
+}
+
+/* Outline purple button when hovering */
+.btn-outline-purple:hover {
+    background-color: #9C27B0;     /* Fills with purple */
+    border-color: #9C27B0;         /* Purple border */
+    color: white;                  /* Text turns white */
+}
+
+/* Cards that display positive affirmations and quotes */
+.affirmation-card {
+    background: white;             /* White background */
+    border-radius: 15px;           /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);  /* Soft shadow */
+    transition: all 0.3s ease;     /* Smooth hover animation */
+    border-left: 5px solid var(--primary-color);  /* Colored left border */
+}
+
+/* What happens when you hover over affirmation cards */
+.affirmation-card:hover {
+    transform: translateY(-5px);   /* Moves card up slightly */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);  /* Bigger shadow */
+    border-left-color: var(--secondary-color);  /* Changes border color */
+}
+
+/* Every other affirmation card gets a different border color */
+.affirmation-card:nth-child(even) {
+    border-left-color: var(--secondary-color);  /* Green border for even cards */
+}
+
+/* When hovering over even-numbered cards */
+.affirmation-card:nth-child(even):hover {
+    border-left-color: var(--accent-color);  /* Orange border when hovering */
+}
+
+/* Text styling inside quote blocks */
+.blockquote p {
+    color: var(--text-dark);       /* Dark text color */
+    margin-bottom: 0;              /* No space below quotes */
+}
+
+/* Adds space above each section when scrolling to it */
+section {
+    scroll-margin-top: 80px;       /* Accounts for fixed navigation bar */
+}
+
+/* Animation that makes elements slide up from bottom */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;                /* Starts invisible */
+        transform: translateY(30px); /* Starts 30px below final position */
+    }
+    to {
+        opacity: 1;                /* Ends fully visible */
+        transform: translateY(0);   /* Ends at normal position */
+    }
+}
+
+/* Makes page scroll smoothly when clicking navigation links */
+html {
+    scroll-behavior: smooth;       /* Smooth scrolling instead of jumping */
+}
+
+/* Footer (bottom of page) styling */
+footer {
+    /* Creates gradient background from dark blue to lighter blue */
+    background: linear-gradient(135deg, #2C3E50 0%, #34495E 100%) !important;
+}
+
+/* Links in the footer */
+footer a {
+    transition: color 0.3s ease;   /* Smooth color change on hover */
+}
+
+/* Footer links when hovering */
+footer a:hover {
+    color: #FFB74D !important;     /* Changes to orange color */
+}
+
+/* RESPONSIVE DESIGN - Makes website look good on all device sizes */
+
+/* EXTRA SMALL DEVICES (Small phones, 576px and smaller) */
+@media (max-width: 575.98px) {
+    .hero-section {
+        min-height: 70vh;           /* Shorter hero section on small phones */
+        padding: 2rem 0;            /* Add padding top and bottom */
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;            /* Smaller heading for small screens */
+        margin-bottom: 1.5rem;      /* Space below heading */
+    }
+    
+    .hero-section p {
+        font-size: 1rem;            /* Normal size text */
+        margin-bottom: 2rem;        /* Space below paragraph */
+    }
+    
+    .hero-buttons .btn {
+        display: block;             /* Stack buttons vertically */
+        width: 100%;                /* Make buttons full width */
+        margin-bottom: 1rem;        /* Space between stacked buttons */
+        padding: 0.75rem 1rem;      /* Smaller button padding */
+        font-size: 0.9rem;          /* Smaller button text */
+    }
+    
+    .display-5 {
+        font-size: 2rem;            /* Smaller section headings */
+    }
+    
+    .tip-card,
+    .resource-card,
+    .affirmation-card {
+        margin-bottom: 1.5rem;      /* Less space between cards */
+    }
+    
+    .tip-card .card-body,
+    .resource-card,
+    .affirmation-card {
+        padding: 1.5rem;            /* Less padding inside cards */
+    }
+    
+    .navbar-brand {
+        font-size: 1.2rem;          /* Smaller navigation brand text */
+    }
+    
+    .fa-3x {
+        font-size: 2rem !important; /* Smaller large icons */
+    }
+    
+    .fa-2x {
+        font-size: 1.5rem !important; /* Smaller medium icons */
+    }
+}
+
+/* SMALL DEVICES (Large phones in landscape, 576px to 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .hero-section {
+        min-height: 80vh;           /* Taller hero section than small phones */
+        padding: 3rem 0;            /* More padding than small phones */
+    }
+    
+    .hero-section h1 {
+        font-size: 2.2rem;          /* Slightly bigger heading */
+    }
+    
+    .hero-buttons .btn {
+        display: inline-block;      /* Buttons side by side again */
+        width: auto;                /* Buttons not full width */
+        margin-right: 1rem;         /* Space between buttons */
+        margin-bottom: 1rem;        /* Space below buttons */
+    }
+    
+    .tip-card,
+    .resource-card,
+    .affirmation-card {
+        margin-bottom: 2rem;        /* More space between cards */
+    }
+    
+    /* Adjusts spacing for two-column layout */
+    .col-md-6:nth-child(odd) {
+        padding-right: 0.75rem;     /* Less right padding for left column */
+    }
+    
+    .col-md-6:nth-child(even) {
+        padding-left: 0.75rem;      /* Less left padding for right column */
+    }
+}
+
+/* MEDIUM DEVICES (Tablets, 768px to 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .hero-section {
+        min-height: 85vh;           /* Good height for tablets */
+    }
+    
+    .hero-section h1 {
+        font-size: 2.8rem;          /* Larger heading for tablets */
+    }
+    
+    .hero-buttons .btn {
+        margin-right: 1rem;         /* Space between buttons */
+        padding: 0.75rem 2rem;      /* More padding inside buttons */
+    }
+    
+    .tip-card,
+    .resource-card {
+        height: 100%;               /* Makes all cards same height */
+        margin-bottom: 2rem;        /* Space below cards */
+    }
+    
+    .affirmation-card {
+        margin-bottom: 1.5rem;      /* Less space for affirmation cards */
+    }
+    
+    /* Makes sure cards are equal height using flexbox */
+    .tip-card .card-body {
+        display: flex;              /* Use flexbox layout */
+        flex-direction: column;     /* Stack content vertically */
+        justify-content: space-between; /* Spread content evenly */
+    }
+    
+    .resource-card {
+        display: flex;              /* Use flexbox for resource cards too */
+        flex-direction: column;     /* Stack content vertically */
+        justify-content: space-between; /* Spread content evenly */
+    }
+    
+    /* Navigation adjustments for tablets */
+    .navbar-nav {
+        text-align: center;         /* Center navigation items */
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 0.75rem 1rem;      /* More padding around nav links */
+    }
+}
+
+/* LARGE DEVICES (Small desktops, 992px to 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .hero-section {
+        min-height: 90vh;           /* Tall hero section for desktops */
+    }
+    
+    .hero-section h1 {
+        font-size: 3.2rem;          /* Large heading for desktop */
+    }
+    
+    .hero-buttons .btn {
+        padding: 1rem 2.5rem;       /* Big buttons with lots of padding */
+        margin-right: 1.5rem;       /* More space between buttons */
+    }
+    
+    .tip-card,
+    .resource-card,
+    .affirmation-card {
+        margin-bottom: 2rem;        /* Standard space between cards */
+    }
+    
+    /* Better spacing for three-column layout on desktop */
+    .col-lg-4 {
+        padding: 0 1rem;            /* Space between columns */
+    }
+    
+    .container {
+        max-width: 1140px;          /* Maximum width for content */
+    }
+}
+
+/* EXTRA LARGE DEVICES (Large desktops, 1200px and bigger) */
+@media (min-width: 1200px) {
+    .hero-section {
+        min-height: 100vh;          /* Full screen height */
+    }
+    
+    .hero-section h1 {
+        font-size: 3.5rem;          /* Biggest heading size */
+    }
+    
+    .hero-buttons .btn {
+        padding: 1.2rem 3rem;       /* Very large buttons */
+        margin-right: 2rem;         /* Lots of space between buttons */
+        font-size: 1.1rem;          /* Slightly bigger button text */
+    }
+    
+    .container {
+        max-width: 1320px;          /* Maximum width for large screens */
+    }
+    
+    /* Extra spacing and padding for large screens */
+    .tip-card .card-body,
+    .resource-card,
+    .affirmation-card {
+        padding: 2.5rem;            /* Lots of padding inside cards */
+    }
+    
+    .py-5 {
+        padding-top: 4rem !important;    /* More top padding for sections */
+        padding-bottom: 4rem !important; /* More bottom padding for sections */
+    }
+    
+    .mb-5 {
+        margin-bottom: 4rem !important;  /* More space below elements */
+    }
+}
+
+/* LANDSCAPE PHONES (When phone is turned sideways) */
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero-section {
+        min-height: 100vh;          /* Use full screen height */
+        padding: 1rem 0;            /* Less padding to save space */
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;            /* Smaller heading for short screens */
+        margin-bottom: 1rem;        /* Less space below heading */
+    }
+    
+    .hero-section p {
+        font-size: 0.9rem;          /* Smaller paragraph text */
+        margin-bottom: 1.5rem;      /* Less space below paragraph */
+    }
+    
+    .hero-buttons .btn {
+        padding: 0.5rem 1.5rem;     /* Smaller buttons */
+        font-size: 0.9rem;          /* Smaller button text */
+    }
+}
+
+/* PRINT STYLES (When someone prints the webpage) */
+@media print {
+    .hero-section,
+    .navbar,
+    footer {
+        display: none;              /* Hide these sections when printing */
+    }
+    
+    .tip-card,
+    .resource-card,
+    .affirmation-card {
+        break-inside: avoid;        /* Don't break cards across pages */
+        box-shadow: none;           /* Remove shadows for printing */
+        border: 1px solid #ddd;     /* Add simple border for print */
+    }
+    
+    /* Shows web addresses after links when printed */
+    a[href^="http"]:after {
+        content: " (" attr(href) ")"; /* Adds URL in parentheses */
+        font-size: 0.8rem;          /* Small text for URLs */
+        color: #666;                /* Gray color for URLs */
+    }
+}
+
+/* ACCESSIBILITY - Makes website usable for everyone */
+.btn:focus,
+.nav-link:focus {
+    /* Adds visible outline when using keyboard navigation */
+    box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.3);
+}
+
+/* LOADING ANIMATIONS - Makes cards appear smoothly when page loads */
+.tip-card,
+.resource-card,
+.affirmation-card {
+    animation: fadeInUp 0.6s ease-out;  /* Slides up from bottom */
+}
+
+/* ICON HOVER EFFECTS - Makes icons fun to interact with */
+.fa-heart:hover,
+.fa-sun:hover,
+.fa-star:hover,
+.fa-dove:hover {
+    animation: pulse 1s infinite;        /* Makes icons pulse when hovering */
+}
+
+/* PULSE ANIMATION - Makes icons grow and shrink repeatedly */
+@keyframes pulse {
+    0% { transform: scale(1); }          /* Normal size at start */
+    50% { transform: scale(1.1); }       /* 10% bigger in middle */
+    100% { transform: scale(1); }        /* Back to normal size at end */
+}

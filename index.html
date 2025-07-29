@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Awareness - You Matter</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="#">
+                <i class="fas fa-heart me-2"></i>Mental Wellness
+            </a>
+            
+            <!-- Mobile menu toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tips">Tips</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resources">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#affirmations">Affirmations</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <div class="hero-content">
+                        <h1 class="display-4 fw-bold text-white mb-4">Your Mental Health Matters</h1>
+                        
+                        <p class="lead text-white mb-4">
+                            You are not alone in your journey. Every step forward is a victory, 
+                            no matter how small. Here you'll find support, resources, and reminders 
+                            that it's okay to not be okay.
+                        </p>
+                        
+                        <div class="hero-buttons">
+                            <a href="#resources" class="btn btn-light btn-lg me-3 px-4">
+                                <i class="fas fa-hands-helping me-2"></i>Get Help
+                            </a>
+                            <a href="#tips" class="btn btn-outline-light btn-lg px-4">
+                                <i class="fas fa-lightbulb me-2"></i>Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mental Health Tips -->
+    <section id="tips" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold text-primary">Mental Health Tips & Information</h2>
+                    <p class="lead text-muted">Small steps can make a big difference in your mental wellness journey</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                
+                <!-- Mindfulness -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 tip-card">
+                        <div class="card-body text-center p-4">
+                            <div class="tip-icon mb-3">
+                                <i class="fas fa-brain fa-3x text-primary"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Practice Mindfulness</h5>
+                            <p class="card-text">
+                                Take 5-10 minutes daily for deep breathing, meditation, or simply being present 
+                                in the moment. Mindfulness can reduce stress and improve emotional regulation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Connection -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 tip-card">
+                        <div class="card-body text-center p-4">
+                            <div class="tip-icon mb-3">
+                                <i class="fas fa-users fa-3x text-success"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Stay Connected</h5>
+                            <p class="card-text">
+                                Maintain relationships with family and friends. Social support is crucial for 
+                                mental health. Don't hesitate to reach out when you need someone to talk to.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Physical Activity -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 tip-card">
+                        <div class="card-body text-center p-4">
+                            <div class="tip-icon mb-3">
+                                <i class="fas fa-running fa-3x text-warning"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Stay Active</h5>
+                            <p class="card-text">
+                                Regular physical activity can boost mood and reduce symptoms of depression and 
+                                anxiety. Even a 15-minute walk can make a difference.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sleep -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 tip-card">
+                        <div class="card-body text-center p-4">
+                            <div class="tip-icon mb-3">
+                                <i class="fas fa-moon fa-3x text-info"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Prioritize Sleep</h5>
+                            <p class="card-text">
+                                Aim for 7-9 hours of quality sleep. Good sleep hygiene includes a consistent 
+                                schedule and a relaxing bedtime routine.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Self-Care -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 tip-card">
+                        <div class="card-body text-center p-4">
+                            <div class="tip-icon mb-3">
+                                <i class="fas fa-heart fa-3x text-danger"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Practice Self-Care</h5>
+                            <p class="card-text">
+                                Set aside time for activities you enjoy. Self-care isn't selfish – it's 
+                                necessary for maintaining good mental health.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Warning Signs -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0 tip-card">
+                        <div class="card-body text-center p-4">
+                            <div class="tip-icon mb-3">
+                                <i class="fas fa-exclamation-triangle fa-3x text-secondary"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Recognize Warning Signs</h5>
+                            <p class="card-text">
+                                Be aware of changes in mood, sleep, appetite, or behavior. Early recognition 
+                                of mental health challenges can lead to better outcomes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold text-primary">Mental Health Resources</h2>
+                    <p class="lead text-muted">Professional help and support are available 24/7</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                
+                <!-- Crisis Support -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="resource-card text-center p-4">
+                        <i class="fas fa-phone-alt fa-3x text-danger mb-3"></i>
+                        <h5 class="fw-bold">Crisis Support</h5>
+                        <p class="mb-3">Immediate help when you need it most</p>
+                        <div class="d-grid gap-2">
+                            <a href="tel:988" class="btn btn-danger btn-lg">
+                                <i class="fas fa-phone me-2"></i>Call 988
+                            </a>
+                            <a href="sms:741741" class="btn btn-outline-danger">
+                                <i class="fas fa-sms me-2"></i>Text HOME to 741741
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- THERAPIST FINDER CARD -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="resource-card text-center p-4">
+                        <i class="fas fa-user-md fa-3x text-primary mb-3"></i>  <!-- Doctor icon -->
+                        <h5 class="fw-bold">Find a Therapist</h5>
+                        <p class="mb-3">Connect with mental health professionals</p>
+                        <div class="d-grid gap-2">
+                            <!-- target="_blank" opens links in new tab -->
+                            <a href="https://www.psychologytoday.com/us/therapists" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-search me-2"></i>Psychology Today
+                            </a>
+                            <a href="https://www.betterhelp.com" target="_blank" class="btn btn-outline-primary">
+                                <i class="fas fa-laptop me-2"></i>Online Therapy
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SUPPORT GROUPS CARD -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="resource-card text-center p-4">
+                        <i class="fas fa-users fa-3x text-success mb-3"></i>  <!-- Group icon in green -->
+                        <h5 class="fw-bold">Support Groups</h5>
+                        <p class="mb-3">Connect with others who understand</p>
+                        <div class="d-grid gap-2">
+                            <a href="https://www.nami.org/Support-Education/Support-Groups" target="_blank" class="btn btn-success">
+                                <i class="fas fa-heart me-2"></i>NAMI Support
+                            </a>
+                            <a href="https://www.mhanational.org/finding-help" target="_blank" class="btn btn-outline-success">
+                                <i class="fas fa-info-circle me-2"></i>MHA Resources
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EDUCATIONAL RESOURCES CARD -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="resource-card text-center p-4">
+                        <i class="fas fa-book fa-3x text-info mb-3"></i>  <!-- Book icon -->
+                        <h5 class="fw-bold">Learn More</h5>
+                        <p class="mb-3">Educational materials and information</p>
+                        <div class="d-grid gap-2">
+                            <!-- NIMH = National Institute of Mental Health -->
+                            <a href="https://www.nimh.nih.gov/" target="_blank" class="btn btn-info">
+                                <i class="fas fa-graduation-cap me-2"></i>NIMH
+                            </a>
+                            <!-- WHO = World Health Organization -->
+                            <a href="https://www.who.int/health-topics/mental-disorders" target="_blank" class="btn btn-outline-info">
+                                <i class="fas fa-globe me-2"></i>WHO Resources
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MENTAL HEALTH APPS CARD -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="resource-card text-center p-4">
+                        <i class="fas fa-mobile-alt fa-3x text-warning mb-3"></i>  <!-- Mobile phone icon -->
+                        <h5 class="fw-bold">Mental Health Apps</h5>
+                        <p class="mb-3">Tools for daily mental wellness</p>
+                        <div class="d-grid gap-2">
+                            <a href="https://www.headspace.com" target="_blank" class="btn btn-warning">
+                                <i class="fas fa-brain me-2"></i>Headspace
+                            </a>
+                            <a href="https://www.calm.com" target="_blank" class="btn btn-outline-warning">
+                                <i class="fas fa-leaf me-2"></i>Calm
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- YOUTH SUPPORT CARD -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="resource-card text-center p-4">
+                        <i class="fas fa-child fa-3x text-purple mb-3"></i>  <!-- Child icon -->
+                        <h5 class="fw-bold">Youth Support</h5>
+                        <p class="mb-3">Resources specifically for young people</p>
+                        <div class="d-grid gap-2">
+                            <!-- JED Foundation focuses on young adult mental health -->
+                            <a href="https://www.jedfoundation.org/" target="_blank" class="btn btn-purple">
+                                <i class="fas fa-graduation-cap me-2"></i>JED Foundation
+                            </a>
+                            <!-- Trevor Project supports LGBTQ+ youth -->
+                            <a href="https://www.thetrevorproject.org/" target="_blank" class="btn btn-outline-purple">
+                                <i class="fas fa-rainbow me-2"></i>Trevor Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- POSITIVE AFFIRMATIONS SECTION - Encouraging quotes and messages -->
+    <section id="affirmations" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <!-- Section header -->
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold text-primary">Daily Affirmations</h2>
+                    <p class="lead text-muted">Gentle reminders of your worth and strength</p>
+                </div>
+            </div>
+            
+            <!-- Centered content area -->
+            <div class="row justify-content-center">
+                <div class="col-lg-10">  <!-- Takes up 10 out of 12 columns, centered -->
+                    <div class="row g-4">
+                        
+                        <!-- AFFIRMATION CARD 1 -->
+                        <div class="col-md-6">  <!-- 2 columns on medium screens and up -->
+                            <div class="affirmation-card text-center p-4">
+                                <i class="fas fa-sun fa-2x text-warning mb-3"></i>  <!-- Sun icon -->
+                                <!-- blockquote is semantic HTML for quotations -->
+                                <blockquote class="blockquote">
+                                    <p class="fs-5 fst-italic">"You are stronger than you know and more resilient than you think."</p>
+                                </blockquote>
+                            </div>
+                        </div>
+                        
+                        <!-- AFFIRMATION CARD 2 -->
+                        <div class="col-md-6">
+                            <div class="affirmation-card text-center p-4">
+                                <i class="fas fa-heart fa-2x text-danger mb-3"></i>  <!-- Heart icon -->
+                                <blockquote class="blockquote">
+                                    <p class="fs-5 fst-italic">"Your feelings are valid, and it's okay to not be okay."</p>
+                                </blockquote>
+                            </div>
+                        </div>
+                        
+                        <!-- AFFIRMATION CARD 3 -->
+                        <div class="col-md-6">
+                            <div class="affirmation-card text-center p-4">
+                                <i class="fas fa-star fa-2x text-success mb-3"></i>  <!-- Star icon -->
+                                <blockquote class="blockquote">
+                                    <p class="fs-5 fst-italic">"Every small step forward is progress worth celebrating."</p>
+                                </blockquote>
+                            </div>
+                        </div>
+                        
+                        <!-- AFFIRMATION CARD 4 -->
+                        <div class="col-md-6">
+                            <div class="affirmation-card text-center p-4">
+                                <i class="fas fa-dove fa-2x text-info mb-3"></i>  <!-- Dove icon (peace) -->
+                                <blockquote class="blockquote">
+                                    <p class="fs-5 fst-italic">"You deserve peace, happiness, and all the good things in life."</p>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Final encouraging message -->
+                    <div class="text-center mt-4">
+                        <p class="lead text-primary fw-bold">
+                            <i class="fas fa-quote-left me-2"></i>
+                            Remember: Seeking help is a sign of strength, not weakness.
+                            <i class="fas fa-quote-right ms-2"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <p class="mb-1">
+                        <i class="fas fa-exclamation-triangle text-warning me-2"></i>
+                        <strong>Disclaimer:</strong> This website is for educational purposes only and is not a substitute for professional medical advice.
+                    </p>
+                    <p class="small text-muted mb-0">
+                        If you are experiencing a mental health emergency, please contact emergency services or a crisis helpline immediately.
+                    </p>
+                </div>
+                
+                <div class="col-md-4 text-md-end">
+                    <p class="mb-0">
+                        <strong>Crisis Hotline: </strong>
+                        <a href="tel:988" class="text-warning text-decoration-none fw-bold">988</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
