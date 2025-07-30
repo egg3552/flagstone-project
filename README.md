@@ -51,4 +51,13 @@ This is for educational purposes only. Not a substitute for professional medical
 
 ---
 
-*Remember: Seeking help is a sign of strength.* 💚
+```markdown
+<!-- filepath: c:\Users\matthew\Desktop\VSCodeProjects\mentalhealthawareness\README.md -->
+# Mental Health Awareness Website
+
+A responsive website for mental health resources and support. Built with Bootstrap 5.
+
+## Wireframe Design
+
+Initial layout design created in Notepad using ASCII art:
+
