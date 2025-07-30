@@ -1,16 +1,16 @@
 /* Custom CSS for Mental Health Awareness Website */
 
-/* CSS Variables */
+/* CSS Variables - Define reusable color values that can be used throughout the stylesheet */
 :root {
-    --primary-color: #6c63ff;
-    --secondary-color: #4CAF50;
-    --accent-color: #FFB74D;
-    --calm-blue: #E3F2FD;
-    --soft-green: #E8F5E8;
-    --gentle-purple: #F3E5F5;
-    --warm-peach: #FFF3E0;
-    --text-dark: #2C3E50;
-    --text-light: #6C757D;
+    --primary-color: #6c63ff;     /* Main purple color used for buttons and accents */
+    --secondary-color: #4CAF50;   /* Green color for success elements */
+    --accent-color: #FFB74D;      /* Orange color for highlights */
+    --calm-blue: #E3F2FD;         /* Light blue for card backgrounds */
+    --soft-green: #E8F5E8;        /* Light green for card backgrounds */
+    --gentle-purple: #F3E5F5;     /* Light purple for card backgrounds */
+    --warm-peach: #FFF3E0;        /* Light orange for card backgrounds */
+    --text-dark: #2C3E50;         /* Dark color for main text */
+    --text-light: #6C757D;        /* Lighter color for secondary text */
 }
 
 body {
@@ -34,17 +34,18 @@ body {
     color: var(--primary-color) !important;
 }
 
-/* Hero section */
+/* Hero section - Full-screen banner area at top of page */
 .hero-section {
+    /* Linear gradient creates a smooth color transition from left to right */
     background: linear-gradient(135deg, var(--primary-color) 0%, #667eea 100%);
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
+    min-height: 100vh;          /* 100vh = 100% of viewport height (full screen) */
+    display: flex;              /* Flexbox allows easy centering of content */
+    align-items: center;        /* Centers content vertically */
+    position: relative;         /* Allows positioning of child elements */
+    overflow: hidden;           /* Hides any content that extends beyond boundaries */
 }
 
-/* Decorative background pattern for hero section */
+/* Decorative background pattern for hero section using CSS pseudo-element */
 .hero-section::before {
     content: '';                   /* Creates an empty element */
     position: absolute;            /* Positions it over the background */
@@ -52,7 +53,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    /* Creates a subtle white triangle pattern */
+    /* Creates a subtle white triangle pattern using inline SVG */
     background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="rgba(255,255,255,0.1)" points="0,1000 1000,800 1000,1000"/></svg>');
     background-size: cover;        /* Makes pattern cover entire area */
     pointer-events: none;          /* Allows clicking through the pattern */
@@ -104,7 +105,9 @@ body {
     background: white;
 }
 
+/* Card hover effects using CSS transforms */
 .tip-card:hover {
+    /* translateY moves element up/down, negative values move up */
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
 }
@@ -114,19 +117,23 @@ body {
 }
 
 .tip-card:hover .tip-icon {
+    /* scale() makes elements bigger/smaller, 1.1 = 10% larger */
     transform: scale(1.1);
 }
 
-/* Alternate card backgrounds */
+/* nth-child selectors - Apply different styles to every 3rd card for variety */
 .tip-card:nth-child(3n+1) {
+    /* 3n+1 targets 1st, 4th, 7th cards, etc. */
     background: linear-gradient(135deg, var(--calm-blue) 0%, white 100%);
 }
 
 .tip-card:nth-child(3n+2) {
+    /* 3n+2 targets 2nd, 5th, 8th cards, etc. */
     background: linear-gradient(135deg, var(--soft-green) 0%, white 100%);
 }
 
 .tip-card:nth-child(3n+3) {
+    /* 3n+3 targets 3rd, 6th, 9th cards, etc. */
     background: linear-gradient(135deg, var(--gentle-purple) 0%, white 100%);
 }
 
@@ -245,14 +252,14 @@ section {
     scroll-margin-top: 80px;       /* Accounts for fixed navigation bar */
 }
 
-/* Animation that makes elements slide up from bottom */
+/* Custom CSS Keyframe Animation - Defines how elements move when appearing */
 @keyframes fadeInUp {
     from {
-        opacity: 0;                /* Starts invisible */
+        opacity: 0;                /* Starts invisible (0 = transparent) */
         transform: translateY(30px); /* Starts 30px below final position */
     }
     to {
-        opacity: 1;                /* Ends fully visible */
+        opacity: 1;                /* Ends fully visible (1 = opaque) */
         transform: translateY(0);   /* Ends at normal position */
     }
 }
@@ -278,9 +285,10 @@ footer a:hover {
     color: #FFB74D !important;     /* Changes to orange color */
 }
 
-/* RESPONSIVE DESIGN - Makes website look good on all device sizes */
+/* RESPONSIVE DESIGN - Media queries change styles based on screen size */
 
 /* EXTRA SMALL DEVICES (Small phones, 576px and smaller) */
+/* @media is a CSS rule that applies styles only when certain conditions are met */
 @media (max-width: 575.98px) {
     .hero-section {
         min-height: 70vh;           /* Shorter hero section on small phones */
@@ -393,11 +401,11 @@ footer a:hover {
         margin-bottom: 1.5rem;      /* Less space for affirmation cards */
     }
     
-    /* Makes sure cards are equal height using flexbox */
+    /* Flexbox properties for equal height cards */
     .tip-card .card-body {
         display: flex;              /* Use flexbox layout */
         flex-direction: column;     /* Stack content vertically */
-        justify-content: space-between; /* Spread content evenly */
+        justify-content: space-between; /* Spread content evenly (pushes button to bottom) */
     }
     
     .resource-card {
@@ -485,6 +493,7 @@ footer a:hover {
 }
 
 /* LANDSCAPE PHONES (When phone is turned sideways) */
+/* This targets devices with short height regardless of width */
 @media (max-height: 600px) and (orientation: landscape) {
     .hero-section {
         min-height: 100vh;          /* Use full screen height */
@@ -508,6 +517,7 @@ footer a:hover {
 }
 
 /* PRINT STYLES (When someone prints the webpage) */
+/* @media print applies styles only when printing the page */
 @media print {
     .hero-section,
     .navbar,
@@ -523,9 +533,9 @@ footer a:hover {
         border: 1px solid #ddd;     /* Add simple border for print */
     }
     
-    /* Shows web addresses after links when printed */
+    /* CSS content property - Automatically adds text after elements */
     a[href^="http"]:after {
-        content: " (" attr(href) ")"; /* Adds URL in parentheses */
+        content: " (" attr(href) ")"; /* Adds URL in parentheses after links */
         font-size: 0.8rem;          /* Small text for URLs */
         color: #666;                /* Gray color for URLs */
     }
@@ -534,7 +544,7 @@ footer a:hover {
 /* ACCESSIBILITY - Makes website usable for everyone */
 .btn:focus,
 .nav-link:focus {
-    /* Adds visible outline when using keyboard navigation */
+    /* Adds visible outline when using keyboard navigation (Tab key) */
     box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.3);
 }
 

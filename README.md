@@ -57,7 +57,5 @@ This is for educational purposes only. Not a substitute for professional medical
 
 A responsive website for mental health resources and support. Built with Bootstrap 5.
 
-## Wireframe Design
 
-Initial layout design created in Notepad using ASCII art:
 
