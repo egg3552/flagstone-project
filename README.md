@@ -49,21 +49,5 @@ A responsive website for mental health resources and support. Built with Bootstr
 
 This is for educational purposes only. Not a substitute for professional medical advice. In a crisis, call 911 or 988.
 
----
-
-```markdown
-<!-- filepath: c:\Users\matthew\Desktop\VSCodeProjects\mentalhealthawareness\README.md -->
-# Mental Health Awareness Website
-
-A responsive website for mental health resources and support. Built with Bootstrap 5.
-
-## Wireframe Design
-
-Initial layout design created in Notepad:
-
-```markdown
-<!-- filepath: c:\Users\matthew\Desktop\VSCodeProjects\mentalhealthawareness\README.md -->
-# Mental Health Awareness Website
-
-A responsive website for mental health resources and support. Built with Bootstrap 5.
+ealth resources and support. 
 
