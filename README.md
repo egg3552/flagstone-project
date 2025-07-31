@@ -39,6 +39,10 @@ A responsive website for mental health resources and support. Built with Bootstr
 - [Bootstrap](https://getbootstrap.com/)
 - [Font Awesome](https://fontawesome.com/)
 
+## Development Process
+
+During development, I utilized Copilot to perform comprehensive syntax validation and error checking across all HTML and CSS files. Copilot helped identify and resolve potential conflicts, ensured proper Bootstrap class usage, and validated semantic HTML structure to maintain code quality and accessibility standards.
+
 ## Setup
 
 1. Download files
