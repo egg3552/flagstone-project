@@ -49,13 +49,9 @@ A responsive website for mental health resources and support. Built with Bootstr
 
 This is for educational purposes only. Not a substitute for professional medical advice. In a crisis, call 911 or 988.
 
----
+## Screenshots
 
-```markdown
-<!-- filepath: c:\Users\matthew\Desktop\VSCodeProjects\mentalhealthawareness\README.md -->
-# Mental Health Awareness Website
+<img width="251" height="418" alt="Screenshot 2025-07-30 100409" src="https://github.com/user-attachments/assets/bfc6233e-074e-4bf2-8a9b-4086366b0d38" />
 
-A responsive website for mental health resources and support. Built with Bootstrap 5.
-
-
-
+![b6b5b2d4-ae1f-428d-a399-3f2c53bf630d](https://github.com/user-attachments/assets/b5c8eea9-be5c-4fa0-9ca2-ff1ee46f0834)
+![17f406ec-a430-4a60-b399-a7ae2ef0a036](https://github.com/user-attachments/assets/037cb120-05e1-4248-ac4f-e67c33c63052)
